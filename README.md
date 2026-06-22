@@ -1,69 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome Page</title>
-
+  <title>Main Page</title>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-    }
-
-    h1 {
-      font-size: 90px;
-      margin: 0;
-      letter-spacing: 5px;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fff;
-      }
-      to {
-        text-shadow: 0 0 25px #00ffcc;
-      }
-    }
-
-    p {
-      font-size: 20px;
-      margin-top: 10px;
-      opacity: 0.8;
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background: #f4f6f9;
     }
 
     .btn {
-      margin-top: 40px;
-      padding: 15px 40px;
-      font-size: 22px;
+      background: #4CAF50;
       color: white;
-      background: #00c6ff;
+      padding: 15px 30px;
+      font-size: 20px;
       border: none;
-      border-radius: 50px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
-      box-shadow: 0 0 15px rgba(0, 198, 255, 0.6);
+      display: inline-block;
+      cursor: pointer;
     }
 
     .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px rgba(0, 198, 255, 1);
+      background: #45a049;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>WELCOME</h1>
-  <p>Start your journey now</p>
+  <h1>Welcome to Main Page</h1>
 
-  <a href="home.html" class="btn">Let's Go</a>
+  <!-- Link to home page -->
+  <a href="home.html" class="btn">Go to Home</a>
 
 </body>
 </html>
