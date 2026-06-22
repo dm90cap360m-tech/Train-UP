@@ -63,7 +63,7 @@
   <h1>WELCOME</h1>
   <p>Start your journey now</p>
 
-  <a href="#" class="btn">Let's Go</a>
+  <a href="home.html" class="btn">Let's Go</a>
 
 </body>
 </html>
