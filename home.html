@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brain Hub</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:black;
+      color:white;
+      min-height:100vh;
+    }
+
+    /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    border-bottom: 2px solid #aa2222;
+  }
+
+  .logo {
+    width: 120px;
+    height: 150px;
+    position: relative;
+    left: -30px;   /* moves image slightly left */
+  }
+
+    /* Decorative line */
+    .line{
+      width:80%;
+      height:3px;
+      background:#aa2222;
+      margin:25px auto;
+      box-shadow:0 0 15px #aa2222;
+    }
+
+    /* Games Section */
+    .games{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:30px;
+      padding:40px;
+    }
+
+    /* Empty Game Frames */
+    .game-frame{
+      width:300px;
+      height:200px;
+      border:3px solid #aa2222;
+      border-radius:15px;
+      background:rgba(255,255,255,0.03);
+      box-shadow:
+        0 0 15px #aa2222,
+        inset 0 0 15px #aa2222;
+      transition:0.3s;
+    }
+
+    .game-frame:hover{
+      transform:scale(1.05);
+      box-shadow:
+        0 0 30px #aa2222,
+        inset 0 0 20px #aa2222;
+    }
+
+
+    footer{
+      text-align:center;
+      padding:20px;
+      color:gray;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <img src="images/brain.png" class="logo">
+    <h1>Brain Hub</h1>
+  </header>
+
+  <div class="line"></div>
+
+  <section class="games">
+
+    <div class="game-frame"></div>
+
+    <div class="game-frame"></div>
+
+    <div class="game-frame"></div>
+
+    <div class="game-frame"></div>
+
+    <div class="game-frame"></div>
+
+    <div class="game-frame"></div>
+
+  </section>
+
+  <footer>
+    More games coming soon...
+  </footer>
+
+</body>
+</html>
