@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TrainUP</title>
+  <title>Brain Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 
   <style>
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
-      font-family:Arial, sans-serif;
     }
 
     body{
@@ -16,15 +17,17 @@
       display:flex;
       justify-content:center;
       align-items:center;
+
       background:linear-gradient(
         -45deg,
-        #1e3c72,
-        #2a5298,
-        #00c6ff,
-        #0072ff
+        #050000,
+        #0a0000,
+        #140000,
+        #220000
       );
+
       background-size:400% 400%;
-      animation:gradient 10s ease infinite;
+      animation:gradient 15s ease infinite;
     }
 
     @keyframes gradient{
@@ -36,47 +39,89 @@
     .container{
       text-align:center;
       color:white;
-      background:rgba(255,255,255,0.12);
-      padding:50px;
+
+      background:rgba(25,0,0,0.45);
+
+      padding:60px;
       border-radius:25px;
-      backdrop-filter:blur(10px);
-      box-shadow:0 0 25px rgba(0,0,0,0.3);
+
+      border:2px solid #660000;
+
+      backdrop-filter:blur(12px);
+
+      box-shadow:
+        0 0 15px #330000,
+        0 0 35px rgba(80,0,0,0.5);
     }
 
     h1{
-      font-size:80px;
-      letter-spacing:5px;
-      margin-bottom:15px;
-      text-shadow:0 0 20px rgba(255,255,255,0.8);
+      font-family:'Orbitron', sans-serif;
+      font-size:100px;
+      font-weight:900;
+
+      letter-spacing:8px;
+
+      color:#990000;
+
+      margin-bottom:20px;
+
+      text-shadow:
+        0 0 5px #660000,
+        0 0 15px #660000,
+        0 0 30px #330000;
     }
 
     p{
+      font-family:'Orbitron', sans-serif;
       font-size:22px;
-      margin-bottom:35px;
-      opacity:0.9;
+
+      color:#cccccc;
+
+      margin-bottom:40px;
+
+      letter-spacing:2px;
     }
 
     .btn{
       display:inline-block;
+
       text-decoration:none;
+
       color:white;
-      background:#00c6ff;
-      padding:15px 40px;
-      font-size:22px;
+
+      background:#660000;
+
+      padding:16px 42px;
+
       border-radius:50px;
+
+      font-size:22px;
+
+      font-family:'Orbitron', sans-serif;
+
       transition:0.3s;
-      box-shadow:0 0 15px rgba(0,198,255,0.7);
+
+      box-shadow:0 0 10px #660000;
     }
 
     .btn:hover{
-      transform:scale(1.1);
-      box-shadow:0 0 30px rgba(0,198,255,1);
+      transform:scale(1.08);
+
+      background:#880000;
+
+      box-shadow:0 0 20px #880000;
     }
 
     .footer{
-      margin-top:25px;
+      margin-top:30px;
+
+      color:#888888;
+
+      font-family:'Orbitron', sans-serif;
+
+      letter-spacing:3px;
+
       font-size:14px;
-      opacity:0.7;
     }
   </style>
 </head>
@@ -84,17 +129,19 @@
 <body>
 
   <div class="container">
+
     <h1>WELCOME</h1>
 
-    <p>Welcome to TrainUP 🚀</p>
+    <p>ENTER THE WORLD OF PUZZLES, LOGIC & GAMES</p>
 
     <a href="home.html" class="btn">
-      Let's Go
+      LET'S GO
     </a>
 
     <div class="footer">
-      Learn • Create • Grow
+      PLAY • THINK • IMPROVE
     </div>
+
   </div>
 
 </body>
