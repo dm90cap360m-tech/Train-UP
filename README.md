@@ -53,6 +53,17 @@
         0 0 15px #330000,
         0 0 35px rgba(80,0,0,0.5);
     }
+  .developer{
+    position:fixed;
+    bottom:15px;
+    left:15px;
+
+    color:#888;
+   font-size:14px;
+    font-family:'Orbitron', sans-serif;
+
+    letter-spacing:1px;
+  }
 
     h1{
       font-family:'Orbitron', sans-serif;
@@ -143,6 +154,9 @@
     </div>
 
   </div>
+  <div class="developer">
+    Developer: Yunish Adhikari
+</div>
 
 </body>
 </html>
