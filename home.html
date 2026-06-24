@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Brain Hub</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     *{
@@ -19,33 +22,34 @@
     }
 
     /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 30px;
-    border-bottom: 2px solid #aa2222;
-  }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:15px;
+      padding:30px;
+      border-bottom:2px solid #aa2222;
+    }
 
-  header h1 {
-    font-size: 80px;
-    font-family: 'Orbitron', sans-serif;
-    color: #4d0000;
-    text-shadow:
-      0 0 5px #ff0000,
-      0 0 8px #ff0000,
-      0 0 20px #ff0000;
-    letter-spacing: 4px;
-  }
     .logo{
-    width: 160px;
-    height: 210px;
-    position: relative;
-    left:-100px;   /* moves image slightly left */
-  }
+      width:160px;
+      height:auto;
+      position:relative;
+      left:-100px;
+    }
 
-    /* Decorative line */
+    header h1{
+      font-size:80px;
+      font-family:'Orbitron', sans-serif;
+      color:#4d0000;
+      text-shadow:
+        0 0 5px #ff0000,
+        0 0 8px #ff0000,
+        0 0 20px #ff0000;
+      letter-spacing:4px;
+    }
+
+    /* Decorative Line */
     .line{
       width:80%;
       height:3px;
@@ -63,7 +67,7 @@
       padding:40px;
     }
 
-    /* Empty Game Frames */
+    /* Game Frames */
     .game-frame{
       width:300px;
       height:200px;
@@ -83,40 +87,70 @@
         inset 0 0 20px #aa2222;
     }
 
-
     footer{
       text-align:center;
       padding:20px;
       color:gray;
+      font-family:'Orbitron', sans-serif;
+    }
+
+    /* Mobile Devices */
+    @media (max-width:768px){
+
+      header{
+        flex-direction:column;
+        gap:10px;
+      }
+
+      .logo{
+        width:90px;
+        left:0;
+      }
+
+      header h1{
+        font-size:45px;
+        text-align:center;
+        letter-spacing:2px;
+      }
+
+      .line{
+        width:90%;
+      }
+
+      .games{
+        padding:20px;
+        gap:20px;
+      }
+
+      .game-frame{
+        width:90%;
+        max-width:320px;
+        height:180px;
+      }
+
+      footer{
+        font-size:12px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-
   <header>
-    <img src="images/brain.png" class="logo">
+    <img src="images/brain.png" class="logo" alt="Brain Hub Logo">
     <h1>Brain Hub</h1>
   </header>
 
   <div class="line"></div>
-  
 
   <section class="games">
-
     <div class="game-frame"></div>
-
     <div class="game-frame"></div>
-
     <div class="game-frame"></div>
-
     <div class="game-frame"></div>
-
     <div class="game-frame"></div>
-
     <div class="game-frame"></div>
-
   </section>
 
   <footer>
