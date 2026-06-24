@@ -1,9 +1,10 @@
-
+<!DOCTYPE html>
 <html>
 <head>
   <title>Brain Hub</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     *{
@@ -134,6 +135,41 @@
 
       font-size:14px;
     }
+      /* Mobile Devices */
+    @media (max-width: 768px){
+
+      .container{
+      width:90%;
+      padding:35px 20px;
+    }
+
+      h1{
+        font-size:50px;
+        letter-spacing:4px;
+      }
+
+      p{
+        font-size:16px;
+        margin-bottom:25px;
+        letter-spacing:1px;
+      }
+
+      .btn{
+        font-size:18px;
+        padding:12px 28px;
+      }
+
+      .footer{
+        font-size:12px;
+        letter-spacing:2px;
+      }
+
+      .developer{
+        font-size:11px;
+        left:10px;
+        bottom:10px;
+  }
+}
   </style>
 </head>
 
